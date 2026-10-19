@@ -9,7 +9,7 @@ def generate_data():
     :return: X: input data, y: given labels
     '''
     np.random.seed(0)
-    X, y = datasets.make_moons(200, noise=0.20)
+    X, y = datasets.make_circles(200, noise=0.2,factor=0.6)
     return X, y
 
 def plot_decision_boundary(pred_func, X, y):
